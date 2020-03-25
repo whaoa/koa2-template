@@ -1,7 +1,7 @@
 /*
  * @Date: 2020-03-25 15:44:15
  * @LastEditors: Wanghao
- * @LastEditTime: 2020-03-25 15:48:28
+ * @LastEditTime: 2020-03-25 16:31:42
  * @FilePath: \koa\app\index.js
  * @Description: 主文件
  */
@@ -33,7 +33,7 @@ app.use(koaBody({
   parsedMethods: ["POST", "PUT", "PATCH", "DELETE"],
   multipart: true,
   formidable: {
-    uploadDir: __dirname + "/app/public/temp", // 保存目录
+    uploadDir: path.resolve(__dirname, "./public/temp"), // 保存目录
     keepExtensions: true,
     maxFileSize: 1024 * 1024 * 10 // 设置上传文件大小最大限制，默认2M
   }

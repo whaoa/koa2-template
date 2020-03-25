@@ -1,12 +1,12 @@
 {
-  "name": "backend-koa-template",
+  "name": "koa2-template",
   "version": "0.1.0",
   "scripts": {
     "start": "node script/start.js",
     "dev": "./node_modules/.bin/nodemon script/start.js",
     "prd": "pm2 start script/start.js -n backend-api",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "commit": "git-cz",
+    "commit": "./node_modules/.bin/git-cz",
     "changelog": "./node_modules/.bin/conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
   },
   "dependencies": {
@@ -31,11 +31,15 @@
     "walk-sync": "^2.0.2"
   },
   "devDependencies": {
+    "babel-eslint": "^10.1.0",
     "commitizen": "^4.0.3",
     "conventional-changelog-cli": "^2.0.31",
     "cz-conventional-changelog": "^3.1.0",
     "cz-customizable": "^6.2.0",
-    "nodemon": "^1.19.1"
+    "eslint": "^6.8.0",
+    "eslint-config-alloy": "^3.6.0",
+    "nodemon": "^1.19.1",
+    "prettier": "^2.0.2"
   },
   "config": {
     "commitizen": {
