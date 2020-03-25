@@ -1,0 +1,45 @@
+{
+  "name": "backend-koa-template",
+  "version": "0.1.0",
+  "scripts": {
+    "start": "node script/start.js",
+    "dev": "./node_modules/.bin/nodemon script/start.js",
+    "prd": "pm2 start script/start.js -n backend-api",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commit": "git-cz",
+    "changelog": "./node_modules/.bin/conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "dayjs": "^1.8.19",
+    "debug": "^4.1.1",
+    "koa": "^2.7.0",
+    "koa-body": "^4.1.1",
+    "koa-convert": "^1.2.0",
+    "koa-json": "^2.0.2",
+    "koa-onerror": "^4.1.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "koa-views": "^6.2.0",
+    "koa-xml-body": "^2.1.0",
+    "koa2-cors": "^2.0.6",
+    "mongoose": "^5.9.3",
+    "mysql2": "^2.1.0",
+    "parameter": "^3.6.0",
+    "pug": "^2.0.3",
+    "sequelize": "^5.21.5",
+    "walk-sync": "^2.0.2"
+  },
+  "devDependencies": {
+    "commitizen": "^4.0.3",
+    "conventional-changelog-cli": "^2.0.31",
+    "cz-conventional-changelog": "^3.1.0",
+    "cz-customizable": "^6.2.0",
+    "nodemon": "^1.19.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
+  }
+}
