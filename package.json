@@ -10,7 +10,7 @@
     "changelog": "./node_modules/.bin/conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "dayjs": "^1.8.19",
     "debug": "^4.1.1",
     "koa": "^2.7.0",
